@@ -8,7 +8,9 @@ app.set('view engine', 'ejs')
 
 app.get('/', (req, res) =>{
     const nama = "Asep Wilayana";
-    res.render('index', {nama:nama})
+    const title = "Web Server EJS";
+
+    res.render('index', {nama:nama, title:title})
 })
 app.get('/contact', (req, res) =>{
     res.render('./contact')
